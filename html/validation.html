@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z]{3,8}" placeholder="Name only"><br><br>
+    
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" placeholder="more than 8"><br><br>
+
+        <label for="cont">Contact</label>
+        <input type="tel" name="contact" id="cont" pattern="[6-9]{1}[0-9]{9}" placeholder="number: 10digits"><br><br>
+
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
