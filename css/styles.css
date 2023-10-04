@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    background-color: darkturquoise;
+}
+h2{
+    text-align: right;
+    background-color: rgb(204, 7, 230);
+}
+p{
+    background-color: brown;
+}
+#para1{
+    background-color: bisque;
+    text-align: center;
+}
+h1,h2,p{
+    border: 2px solid rebeccapurple;
+}
