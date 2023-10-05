@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Validation</title>
+    <style> 
+        body{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <label for="name">Username</label>
-        <input type="text" id="name" name="name" pattern="[a-zA-Z]{3,8}" placeholder="Name only"><br><br>
-    
-        <label for="pw">Password</label>
-        <input type="password" id="pw" name="pw" placeholder="more than 8"><br><br>
+    <div class="container">
+        <form action="/html/thankyou.html">
+            <fieldset>
+                <legend>Personal Details</legend>
 
-        <label for="cont">Contact</label>
-        <input type="tel" name="contact" id="cont" pattern="[6-9]{1}[0-9]{9}" placeholder="number: 10digits"><br><br>
-
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z]{3,8}" placeholder="Name only" required><br><br>
+            
+                <label for="pw">Password</label>
+                <input type="password" id="pw" name="pw" placeholder="more than 8" required><br><br>
         
-        <input type="submit" value="Submit">
-    </form>
+                <label for="cont">Contact</label>
+                <input type="tel" name="contact" id="cont" pattern="[6-9]{1}[0-9]{9}" placeholder="number: 10digits"><br><br>
+                
+                <label for="">DOB</label>
+                <input type="date"><br><br>
+
+                <label for="">E-mail</label>
+                <input type="text"><br><br>
+
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Educational Details</legend>
+                <label for="">Department</label>
+        
+                <input type="radio" id="cse" name="dept" >
+                <label for="">CSE</label>
+                <input type="radio" id="ece" name="dept" >
+                <label for="">EC</label>
+                <input type="radio" id="mech" name="dept" >
+                <label for="">MECH</label>
+                <input type="radio" id="civil" name="dept" >
+                <label for="">CIVIL</label><br><br>
+        
+                <label for="">yog</label>
+                <input name="yog" id="yog" list="gg"><br><br>
+        
+                <datalist id="gg">
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </datalist>
+                <label for="">Skills</label>
+        
+                <input type="checkbox" name="" id="">
+                <label for="">HTML</label>
+                <input type="checkbox" name="" id="">
+                <label for="">CSS</label>
+                <input type="checkbox" name="" id="">
+                <label for="">JAVASCRIPT</label>
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>

@@ -18,3 +18,15 @@ p{
 h1,h2,p{
     border: 2px solid rebeccapurple;
 }
+
+div{
+    border: 3px solid rebeccapurple;
+    padding: 10px;
+    width: 53%;
+    margin-left: 25%;
+}
+fieldset{
+    width: 50%;
+    margin-left: 10%;
+}
+
